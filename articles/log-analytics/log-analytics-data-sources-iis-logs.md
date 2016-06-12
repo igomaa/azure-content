@@ -69,8 +69,8 @@ The following table provides different examples of log queries that retrieve IIS
 
 | Query | Description |
 |:--|:--|
-| Type=IISLog | All IIS log records. |
-| Type=IISLog EventLevelName=error | All Windows events with severity of error. |
+| Type=W3CIISLog | All IIS log records. |
+| Type=W3CIISLog EventLevelName=error | All Windows events with severity of error. |
 | Type=W3CIISLog &#124; Measure count() by cIP | Count of IIS log entries by client IP address. |
 | Type=W3CIISLog csHost="www.contoso.com" &#124; Measure count() by csUriStem | Count of IIS log entries by URL for the host www.contoso.com. |
 | Type=W3CIISLog &#124; Measure Sum(csBytes) by Computer &#124; top 500000| Total bytes received by each IIS computer. |
